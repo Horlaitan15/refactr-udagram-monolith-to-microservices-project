@@ -71,11 +71,11 @@ spec:
                 configMapKeyRef:
                   name: env-configmap
                   key: AWS_BUCKET
-            - name: JWT_TOKEN
+            - name: JWT_SECRET
               valueFrom:
-                configMapKeyRef:
-                  name: env-configmap
-                  key: JWT_TOKEN
+                secretKeyRef:
+                  name: env-secret
+                  key: JWT_SECRET
             - name: URL
               valueFrom:
                 configMapKeyRef:

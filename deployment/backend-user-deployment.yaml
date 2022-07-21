@@ -23,8 +23,10 @@ spec:
           resources:
             limits:
               cpu: 500m
+              memory: 2000Mi
             requests:
-              cpu: 200m
+              cpu: 250m
+              memory: 1000Mi
           env:
             - name: AWS_SECRET_KEY
               valueFrom:
@@ -71,11 +73,11 @@ spec:
                 configMapKeyRef:
                   name: env-configmap
                   key: AWS_BUCKET
-            - name: JWT_TOKEN
+            - name: JWT_SECRET
               valueFrom:
-                configMapKeyRef:
-                  name: env-configmap
-                  key: JWT_TOKEN
+                secretKeyRef:
+                  name: env-secret
+                  key: JWT_SECRET
             - name: URL
               valueFrom:
                 configMapKeyRef:
