@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: horlaitan15/udagram-frontend:local
+        image: horlaitan15/udagram-frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80
