@@ -5,7 +5,7 @@ metadata:
 data:
   JWT_TOKEN: micro
   POSTGRES_DB: postgres
-  POSTGRES_HOST: horla-udagram.cnzgrme323pl.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: horla.cnzgrme323pl.us-east-1.rds.amazonaws.com
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   AWS_BUCKET: horla-udagram
