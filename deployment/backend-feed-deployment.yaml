@@ -15,7 +15,7 @@ spec:
         app: backend-feed
     spec:
       containers:
-        - name: backend-feed
+      - name: backend-feed
         image: horlaitan15/udagram-api-feed
         imagePullPolicy: Always
         ports:
